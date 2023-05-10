@@ -1,0 +1,24 @@
+HR
+3
+Ivan | Nikolaev | 21.09.1986 | Moskow
+Lika | Mikhailova | 29.05.1994 | Omsk
+Ivan | Nikolaev | 26.01.1991 | Novosibirsk
+
+IT
+4
+Anna | Ivanova | 12.12.1992 | Moskow
+Inessa | Cgarkasova | 29.09.1995 | Omsk
+Mark | Samartsev | 23.04.1993 | Novosibirsk
+Mikhail | Maksakov | 05.06.1989 | Moskow
+
+Finance
+2
+Bogdan | Zakharov | 22.12.1988 | Moskow
+Lika | Michailova | 31.05.1996 | Omsk
+
+Tech
+3
+Olga | Nikolaeva | 22.01.1998 | Moskow
+Inga | Protasova | 29.04.1982 | Omsk
+Igor | Tarasov | 25.01.1993 | Novosibirsk
+
