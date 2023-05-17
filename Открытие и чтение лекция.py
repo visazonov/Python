@@ -64,7 +64,7 @@ with open('folder/file2.txt', 'rt') as file1:
 
 
 # абсолютный путь
-# with open(r'C:\Users\User\Desktop\Python\folder\file2.txt', 'rt') as f:
+# with open('C:/Users/User/Desktop/Python/folder/file2.txt', 'rt') as f:
 # with open('/home/User/Desktop/Python/folder/file2.txt', 'rt') as f:
 # with open('/Users/User/Desktop/Python/folder/file2.txt', 'rt') as f:
 # windows
