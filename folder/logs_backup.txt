@@ -1,0 +1,13 @@
+
+создание папки /backup/: 201 {'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2Fbackup%2F', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/99202885bfbaf8ac7072d3e49ea30ca9b1c943f083f91c009047ffef79ce432d', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/3afc974f8d31d0a7200e958696266f2f5e8cf1d4062474726d55fb6194501eec', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/2bc35436cdb8484a344e7acc83a1e127c842a5e078cb188e2e129af630e79560', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/3926630497c86e8a4fa24af90d0526a2e5edcc504c71cd90e5f44a976d4550c1', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/d3e0f91898ea4cbcb9b56990bd62ad7711206317e64792441ea013fa68e25ad8', 'method': 'GET', 'templated': False}
+создание папки /backup/: 409 {'message': 'По указанному пути "/backup/" уже существует папка с таким именем.', 'description': 'Specified path "/backup/" points to existent directory.', 'error': 'DiskPathPointsToExistentDirectoryError'}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/af03d96241096cf93a98b03242bf9d4e00a3cf5bb4ff75e9636a4fd7bb970ef6', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/f08171efbe41e4ad13d1e2c36864a04b2799a8302bad69b8fea80ecfb4b3b6e7', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/a76f32c0afc59a94624a19081a0f0a30e211914777664d3e0734c44fc12f8060', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/9e6aef6d77056aa56556e9cf3ca6ac1d4811d1a9168152ff0dcdc33e934b8d8c', 'method': 'GET', 'templated': False}
+загрузка: код 202 {'href': 'https://cloud-api.yandex.net/v1/disk/operations/2e63fe96bce6e5b2a9aee78d30e0a351983d3a79bd48ea5a2855f75f8e85727c', 'method': 'GET', 'templated': False}

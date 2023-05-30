@@ -28,6 +28,7 @@ def get_intelligence_sh(sh_list):
     print(intelligence)
 
     res = sorted(list(zip(hero, intelligence)))
+    print(res)
     print(f'Самый умный {res[-1][0]}')
 
 

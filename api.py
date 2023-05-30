@@ -17,7 +17,7 @@ class Yandex:
         params = {'limit': 2}
         response = requests.get(request_url, headers=self.get_headers(), params=params)
         print(response.status_code)
-        # print(response.json())
+        print(response.json())
 
     def _get_upload_link(self, path):
         uri = '/v1/disk/resources/upload/'
