@@ -1,10 +1,13 @@
 import json
+import os
 import sqlalchemy
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 
 from HW_ORM_models import create_tables, Publisher, Shop, Book, Stock, Sale
 
-DSN = "postgresql://postgres:123Swe22+@localhost:5432/netology"
+Password_bd = os.getenv('Password_bd')
+
+DSN = f'postgresql://postgres:{Password_bd}@localhost:5432/netology'
 engine = sqlalchemy.create_engine(DSN)
 
 
@@ -13,7 +16,6 @@ create_tables(engine)
 
 Session = sessionmaker(bind=engine)
 session = Session()
-
 
 
 # заполнение данными
@@ -33,28 +35,29 @@ session = Session()
 # session.commit()
 
 
-
-
 # выборкаданных
 # autor_name = input('Введите имя автора')
 autor_name = 'Pearson'
 
+
 def sale_book(autor):
-    # q = session.query(Publisher).all()
+#     q = session.query(Publisher).all()
 #     q = session.query(Publisher).filter(Publisher.name == autor)
 #     q = session.query(Publisher.name, Book.title).join(Book.publisher).filter(Publisher.name == autor_name).all()
     q = session.query(Book.title, Shop.name, Sale.price, Sale.date_sale).join(Book.publisher).join(Stock).join(Shop).join(Sale).filter(Publisher.name == autor_name).all()
     for r in q:
         print(r)
-        for a in r:
-            print(a)
+        res = f'{r[0]} | {r[1]} | {r[2]} | {r[3]}'
+        print (res)
+        # print([r[0]] + [r[1]] + [str(r[2])] + [str(r[3])])
 
 
 sale_book(autor_name)
 
-# Параметры подключения к БД следует выносить в отдельные переменные: логин, пароль, название БД и пр.
-# Загружать значения лучше из окружения ОС, например, через os.getenv().
-# Заполнять данными можно вручную или выполнить необязательное задание 3.
-# посмотреть что означает **record.get('fields')))
+
 
 session.close()
+
+
+# С помощью list comprehension . Больше будет для вывода нескольких списков (книг).
+# print([[r[0]] + [r[1]] + [str(r[2])] + [str(r[3])] for s in selected.all()])

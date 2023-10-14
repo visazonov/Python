@@ -54,8 +54,8 @@ class Sale(Base):
 
     id = sq.Column(sq.Integer, primary_key=True)
     price = sq.Column(sq.Numeric)
-    # date_sale = sq.Column(sq.Date)
-    date_sale = sq.Column(sq.TIMESTAMP)
+    date_sale = sq.Column(sq.Date)
+    # date_sale = sq.Column(sq.TIMESTAMP)
     id_stock = sq.Column(sq.Integer, sq.ForeignKey("stock.id"), nullable=False)
     count = sq.Column(sq.Integer)
 
